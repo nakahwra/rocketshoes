@@ -48,7 +48,7 @@ const Home = (): JSX.Element => {
         <li key={product.id}>
           <img src={product.image} alt="Tênis de Caminhada Leve Confortável" />
           <strong>{product.title}</strong>
-          <span>{product.price}</span>
+          <span>{formatPrice(product.price)}</span>
           <button
             type="button"
             data-testid="add-product-button"
